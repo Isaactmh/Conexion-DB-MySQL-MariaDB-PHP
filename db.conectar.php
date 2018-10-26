@@ -1,9 +1,6 @@
 <?php
 
-//Conexion DB
-class Conexion
-{
-    public function conectar(){
+        //Conexion DB
         //Server
         $host = "localhost";  //IP o nombre del servidor (MySQL o MariaDB)
         $user = "root";       // Usuario de la Base de datos
@@ -18,5 +15,3 @@ class Conexion
         }catch(PDOException $e){
             echo "Error al conectar con MySQL ".$e->getMessage();
         }
-    }
-}
