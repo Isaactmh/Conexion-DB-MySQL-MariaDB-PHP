@@ -11,7 +11,6 @@
         try{
             $conn = new PDO("mysql:host=$host; dbname=$db", $user, $pass, $encoding);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $conn;
         }catch(PDOException $e){
             echo "Error al conectar con MySQL ".$e->getMessage();
         }
